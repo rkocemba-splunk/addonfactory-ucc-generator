@@ -119,7 +119,7 @@ def clean_before_build(outputdir):
     """
 
     logger.info("Cleaning out directory " + outputdir)
-    shutil.rmtree(os.path.join(outputdir), ignore_errors=True)
+    shutil.rmtree(os.path.join(outputdir))
     os.makedirs(os.path.join(outputdir))
     logger.info("Cleaned out directory " + outputdir)
 
